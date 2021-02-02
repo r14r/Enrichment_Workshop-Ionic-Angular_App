@@ -1,0 +1,21 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button></ion-back-button>
+		</ion-buttons>
+
+		<ion-title>Details</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<h3>Details</h3>
+
+	<div>Name: {{ contact.name }}</div>
+	<div>EMail: {{ contact.email }}</div>
+
+	<div>
+		Photo:
+		<img src="https://randomuser.me/api/portraits/{{contact.photo}}" />
+	</div>
+</ion-content>

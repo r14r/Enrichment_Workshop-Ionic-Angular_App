@@ -1,0 +1,15 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-back-button [defaultHref]="defaultHref"></ion-back-button>
+		</ion-buttons>
+
+		<ion-title>Details: {{item?.name}}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+	<div *ngIf="item" class="ion-padding">
+		<app-component-details [item]="item"></app-component-details>
+	</div>
+</ion-content>

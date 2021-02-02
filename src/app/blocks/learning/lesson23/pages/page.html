@@ -1,0 +1,21 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Lesson 2.3 - JavaScript</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<h1>Der 
+		aktueller 
+		Wert 
+		ist {{ wert }}</h1>
+
+	Hochzaehlen um den Wert:
+	<ion-input type="number" [(ngModel)]="schritt"> </ion-input>
+
+	<ion-button (click)="hochzaehlen()"> Hochzaehlen </ion-button>
+	<ion-button (click)="runterzaehlen()"> Runterzaehlen</ion-button>
+</ion-content>

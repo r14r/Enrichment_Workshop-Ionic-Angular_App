@@ -1,0 +1,32 @@
+<ion-header [translucent]="true">
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>{{ folder }}</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+	<ion-header collapse="condense">
+		<ion-toolbar>
+			<ion-title size="large">{{ folder }}</ion-title>
+		</ion-toolbar>
+	</ion-header>
+
+	<div id="container">
+		<h1 id="header">Überschrift 1</h1>
+		<div class="text">Dieser Text</div>
+		<div class="text">ist kursiv</div>
+
+		<h2>Überschrift 2</h2>
+		<h4>Überschrift 4</h4>
+
+		Dieser Text ist <b><i>fett und kursiv</i></b>
+
+		<div>Dieser Text ist</div>
+		<div>
+			<b><i>fett und kursiv</i></b>
+		</div>
+	</div>
+</ion-content>

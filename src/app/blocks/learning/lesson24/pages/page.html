@@ -1,0 +1,37 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Lesson 2.4</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content> 
+	<h1>Addieren</h1>
+	
+	<ion-input type="number" [(ngModel)]="val1">
+		Wert 1:
+	</ion-input>
+	
+	<ion-input type="number" [(ngModel)]="val2">
+		Wert 2:
+	</ion-input>
+	
+	<ion-input type="number" [(ngModel)]="summe">
+		Summe:
+	</ion-input>
+	
+	<div>
+		{{ val1 + val2 }}
+	</div>
+
+	<ion-button (click)="check()">
+		Überprüfen
+	</ion-button>
+
+	<div class="ergebnis_{{ ergebnis }}">
+		{{ ergebnis }}
+	</div>
+
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+
+		<ion-title>Master</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content id="pdf-output">
+	<!-- 
+		<ion-button (click)="pdfDownload()">Download</ion-button>
+	-->
+
+	<ion-list #itemList>
+		<ion-item-sliding *ngFor="let item of items" #slidingItem>
+			<!-- <ion-item routerLink="/details/{{item.id}}"> -->
+			<ion-item (click)="navigateTo(item)">
+				<ion-label>
+					<h3>{{item.name}}</h3>
+				</ion-label>
+			</ion-item>
+			<ion-item-options>
+				<ion-item-option color="favorite" (click)="addFavorite(slidingItem, item)"> Favorite </ion-item-option>
+				<ion-item-option color="danger" (click)="removeFavorite(slidingItem, item, 'Remove Favorite')"> Remove </ion-item-option>
+			</ion-item-options>
+		</ion-item-sliding>
+	</ion-list>
+</ion-content>

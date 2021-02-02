@@ -1,0 +1,77 @@
+ion-grid {
+    width: 70%;
+  }
+  
+  ion-grid:after {
+    content: "";
+    display: block;
+    padding-bottom: 80%;
+  }
+  
+  ion-row {
+    height: 33%;
+  }
+  
+  .board {
+    background-color:/* #a45632 */ fff;
+    color: #fff;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border: 2px solid #222222;
+    background-color: white;
+    font-size: 100px;
+    font-family: "Gochi Hand", sans-serif;
+    text-align: center;
+    color: red;
+
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    &-empty {
+      --background: blue !important;
+      color: blue;
+    }
+    &-x {
+      --background: red !important;
+      color: red;
+    }
+    &-o {
+      --background: green !important;
+      --color: green;
+    }
+  }
+  
+  .gameStatus {
+    margin: 0px;
+    padding: 15px;
+    color: #34495e;
+    font-family: "Dosis", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 4em;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .restart {
+    background-color: #34495e;
+    color: #fff;
+    border: 0px;
+    font-family: "Dosis", Helvetica, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 0px;
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .restart:hover {
+    background-color: #c1cdcd;
+    cursor: pointer;
+  }
+  

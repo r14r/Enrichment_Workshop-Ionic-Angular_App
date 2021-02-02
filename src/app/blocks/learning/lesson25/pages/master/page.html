@@ -1,0 +1,23 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+
+		<ion-title>Master</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content id="pdf-output">
+	<!-- 
+		<ion-button (click)="pdfDownload()">Download</ion-button>
+	-->
+
+	<ion-list #itemList *ngFor="let item of items">
+		<ion-item (click)="navigateTo(item)">
+			<ion-label>
+				<h3>{{item.name}}</h3>
+			</ion-label>
+		</ion-item>
+	</ion-list>
+</ion-content>

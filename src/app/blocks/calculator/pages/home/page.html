@@ -1,0 +1,59 @@
+<ion-header>
+	<ion-toolbar>
+		<ion-buttons slot="start">
+			<ion-menu-button></ion-menu-button>
+		</ion-buttons>
+		<ion-title>Calculator (&copy; by Ralph)</ion-title>
+	</ion-toolbar>
+</ion-header>
+
+<ion-content>
+	<table>
+		<tr>
+			<td class="result" colspan="4">{{ result }}</td>
+		</tr>
+
+		<tr>
+			<td (click)="btnClicked('C')" class="button">C</td>
+			<td (click)="btnClicked('+/-')" class="button">+/-</td>
+			<td (click)="btnClicked('%')" class="button">%</td>
+			<td (click)="btnClicked('/')" class="button operator">/</td>
+		</tr>
+
+		<tr>
+			<td (click)="btnClicked('x^2')" class="button">x^2</td>
+			<td (click)="btnClicked('squareroot')" class="button">&radic;</td>
+			<td (click)="btnClicked('1/x')" class="button">1/x</td>
+			<td (click)="btnClicked('#')" class="button">#</td>
+		</tr>
+
+		<tr>
+			<td (click)="btnClicked('7')" class="button taste">7</td>
+			<td (click)="btnClicked('8')" class="button taste">8</td>
+			<td (click)="btnClicked('9')" class="button taste">9</td>
+			<td (click)="btnClicked('*')" class="button operator">*</td>
+		</tr>
+
+		<tr>
+			<td (click)="btnClicked('4')" class="button taste">4</td>
+			<td (click)="btnClicked('5')" class="button taste">5</td>
+			<td (click)="btnClicked('6')" class="button taste">6</td>
+			<td (click)="btnClicked('-')" class="button operator">-</td>
+		</tr>
+
+		<tr>
+			<td (click)="btnClicked('1')" class="button taste">1</td>
+			<td (click)="btnClicked('2')" class="button taste">2</td>
+			<td (click)="btnClicked('3')" class="button taste">3</td>
+			<td (click)="btnClicked('+')" class="button operator">+</td>
+		</tr>
+
+		<tr>
+			<td (click)="btnClicked('0')" class="button taste" colspan="2">
+				0
+			</td>
+			<td (click)="btnClicked('.')" class="button taste">,</td>
+			<td (click)="btnClicked('=')" class="button operator">=</td>
+		</tr>
+	</table>
+</ion-content>

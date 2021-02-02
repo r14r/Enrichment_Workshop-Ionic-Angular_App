@@ -1,0 +1,37 @@
+ion-content {
+	--background: black;
+}
+
+table {
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 5px;
+}
+
+td {
+	background-color: gray;
+	border-radius: 15px;
+	text-align: center;
+	padding: 15px;
+}
+
+.button:hover {
+	cursor: pointer;
+}
+
+.taste {
+	color: white;
+	background-color: rgb(42, 42, 42);
+}
+
+.operator {
+	color: white;
+	background-color: red;
+}
+
+.result {
+	color: yellowgreen;
+	background-color: black;
+	border-radius: 0;
+	text-align: right;
+}

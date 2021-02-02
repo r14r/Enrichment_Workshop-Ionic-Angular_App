@@ -1,0 +1,21 @@
+.horizontal_center {
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.contact_photo {
+	position: relative;
+	background: #fff;
+	padding: 5px;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 30px;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+
+	img {
+		width: 150px;
+		border-radius: 50%;
+	}
+}
